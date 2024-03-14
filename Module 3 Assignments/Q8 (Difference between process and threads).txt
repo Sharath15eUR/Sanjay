@@ -1,0 +1,13 @@
+Difference between process and threads:
+
+Processes:
+
+1. Processes provide strong isolation with independent memory spaces and resource allocation.
+2. Creating a new process incurs significant overhead due to memory duplication and resource setup.
+3. Inter-process communication (IPC) mechanisms are used for communication between processes.
+
+Threads:
+
+1. Threads share the same memory space and resources within a process.
+2. Creating a new thread is lightweight compared to creating a new process.
+3. Threads enable concurrency and parallelism within a single process.

@@ -1,0 +1,3 @@
+Race Conditons: 
+
+	Race conditions occur when multiple threads access the same data at once. This can lead to data being inconsistent at times. Such race conditions can be avoided by using mutex lock() and unlock() functions. The lock is set when one of the multiple threads accesses the data so that the other threads can't access the data at that particular time. Similarly, the unlock() unsets the lock on the particular data once the access by one thread is completed. 

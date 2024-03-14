@@ -1,0 +1,6 @@
+Which signals are triggered, when the following actions are performed: 
+
+1. user press ctrl+C                             --  SIGINT
+2. kill() system call is invoked  	         --  SIGTERM
+3. CPU tried to execute an illegal instruction   --  SIGILL
+4. When the program access the unassigned memory --  SIGSEGV
