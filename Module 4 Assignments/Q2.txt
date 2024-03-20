@@ -1,0 +1,5 @@
+2. What is the use of bind() function in socket programming ? 
+Answer: 
+
+	The bind() function in socket programming is used to associate a socket with a specific network address (IP address and port number) on the local machine. This is necessary for the operating system to know which incoming network packets should be directed to that particular socket.
+For servers, bind() is used to specify the IP address and port on which the server will listen for incoming connections. For clients, it's typically used to specify a specific local port to use for outgoing connections.

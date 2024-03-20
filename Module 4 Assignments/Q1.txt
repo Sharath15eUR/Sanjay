@@ -1,0 +1,19 @@
+1. Explain the connection procedure followed in client server communication: 
+
+Answer:
+
+i) Server Initialization: The server initializes itself by creating a socket using the socket() system call.
+
+ii) Binding: The server binds the socket to a specific address and port using the bind() system call.
+
+iii) Listening: The server listens for incoming connections by calling the listen() system call.
+
+iv) Client Initialization: The client initializes itself by creating a socket using the socket() system call.
+
+v) Connection Establishment: The client connects to the server using the connect() system call, specifying the server's address and port.
+
+vi) Accepting Connection (Optional): In some cases, if the server uses TCP, it accepts the incoming connection using the accept() system call, which creates a new socket for communication with the client.
+
+vii) Data Transfer: Both client and server can now send and receive data through their respective sockets using the send() and recv() system calls for TCP, or sendto() and recvfrom() for UDP.
+
+viii) Connection Termination (Optional): In TCP, the connection is terminated explicitly by either the client or the server using the close() system call. In UDP, since it's connectionless, no explicit termination is needed.
